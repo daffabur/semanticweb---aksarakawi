@@ -1,0 +1,183 @@
+@prefix : <http://contoh.org/prasasti#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:AksaraKawi a owl:Class .
+:TransliterasiLatin a owl:Class .
+:ArtiBahasaIndonesia a owl:Class .
+
+:aksaraValue a owl:DatatypeProperty ;
+    rdfs:domain :AksaraKawi ;
+    rdfs:range xsd:string .
+
+:valueLatin a owl:DatatypeProperty ;
+    rdfs:domain :TransliterasiLatin ;
+    rdfs:range xsd:string .
+
+:valueArti a owl:DatatypeProperty ;
+    rdfs:domain :ArtiBahasaIndonesia ;
+    rdfs:range xsd:string .
+
+:hasTransliterasi a owl:ObjectProperty ;
+    rdfs:domain :AksaraKawi ;
+    rdfs:range :TransliterasiLatin .
+
+:hasArti a owl:ObjectProperty ;
+    rdfs:domain :AksaraKawi ;
+    rdfs:range :ArtiBahasaIndonesia .
+
+:kawi001 a :AksaraKawi ;
+    :aksaraValue "ꦆꦤꦶ" ;
+    :hasTransliterasi :latin001 ;
+    :hasArti :arti001 .
+
+:latin001 a :TransliterasiLatin ;
+    :valueLatin "Ini" .
+
+:arti001 a :ArtiBahasaIndonesia ;
+    :valueArti "Ini" .
+
+:kawi002 a :AksaraKawi ;
+    :aksaraValue "ꦱꦧ꧀ꦢꦏꦭꦤ꧀ꦢ" ;
+    :hasTransliterasi :latin002 ;
+    :hasArti :arti002 .
+
+:latin002 a :TransliterasiLatin ;
+    :valueLatin "sabdakalanda" .
+
+:arti002 a :ArtiBahasaIndonesia ;
+    :valueArti "ucapan atau sabda penguasa" .
+
+:kawi003 a :AksaraKawi ;
+    :aksaraValue "ꦫꦏꦿꦪꦤ꧀" ;
+    :hasTransliterasi :latin003 ;
+    :hasArti :arti003 .
+
+:latin003 a :TransliterasiLatin ;
+    :valueLatin "Rakryan" .
+
+:arti003 a :ArtiBahasaIndonesia ;
+    :valueArti "gelar bangsawan tinggi" .
+
+:kawi004 a :AksaraKawi ;
+    :aksaraValue "ꦗꦸꦫꦸ" ;
+    :hasTransliterasi :latin004 ;
+    :hasArti :arti004 .
+
+:latin004 a :TransliterasiLatin ;
+    :valueLatin "Juru" .
+
+:arti004 a :ArtiBahasaIndonesia ;
+    :valueArti "jabatan administratif" .
+
+:kawi005 a :AksaraKawi ;
+    :aksaraValue "ꦥꦔꦩ꧀ꦧꦠ꧀" ;
+    :hasTransliterasi :latin005 ;
+    :hasArti :arti005 .
+
+:latin005 a :TransliterasiLatin ;
+    :valueLatin "Pangambat" .
+
+:arti005 a :ArtiBahasaIndonesia ;
+    :valueArti "pejabat atau pengantar/pengawas" .
+
+:kawi006 a :AksaraKawi ;
+    :aksaraValue "ꦆ" ;
+    :hasTransliterasi :latin006 ;
+    :hasArti :arti006 .
+
+:latin006 a :TransliterasiLatin ;
+    :valueLatin "I" .
+
+:arti006 a :ArtiBahasaIndonesia ;
+    :valueArti "di" .
+
+:kawi007 a :AksaraKawi ;
+    :aksaraValue "ꦏꦮꦶꦲꦗꦶ" ;
+    :hasTransliterasi :latin007 ;
+    :hasArti :arti007 .
+
+:latin007 a :TransliterasiLatin ;
+    :valueLatin "kawihaji" .
+
+:arti007 a :ArtiBahasaIndonesia ;
+    :valueArti "nama tempat (Kawihaji)" .
+
+:kawi008 a :AksaraKawi ;
+    :aksaraValue "ꦥꦚ꧀ꦕ" ;
+    :hasTransliterasi :latin008 ;
+    :hasArti :arti008 .
+
+:latin008 a :TransliterasiLatin ;
+    :valueLatin "panca" .
+
+:arti008 a :ArtiBahasaIndonesia ;
+    :valueArti "lima" .
+
+:kawi009 a :AksaraKawi ;
+    :aksaraValue "ꦥꦱꦗꦶ" ;
+    :hasTransliterasi :latin009 ;
+    :hasArti :arti009 .
+
+:latin009 a :TransliterasiLatin ;
+    :valueLatin "pasagi" .
+
+:arti009 a :ArtiBahasaIndonesia ;
+    :valueArti "pengumuman/perintah" .
+
+:kawi010 a :AksaraKawi ;
+    :aksaraValue "ꦩꦂꦱꦤ꧀ꦢꦺꦕ" ;
+    :hasTransliterasi :latin010 ;
+    :hasArti :arti010 .
+
+:latin010 a :TransliterasiLatin ;
+    :valueLatin "marsandeca" .
+
+:arti010 a :ArtiBahasaIndonesia ;
+    :valueArti "menyampaikan" .
+
+:kawi011 a :AksaraKawi ;
+    :aksaraValue "ꦧ" ;
+    :hasTransliterasi :latin011 ;
+    :hasArti :arti011 .
+
+:latin011 a :TransliterasiLatin ;
+    :valueLatin "bar" .
+
+:arti011 a :ArtiBahasaIndonesia ;
+    :valueArti "bahwa" .
+
+:kawi012 a :AksaraKawi ;
+    :aksaraValue "ꦥꦸꦭꦶꦏ꧀ꦲꦤ꧀" ;
+    :hasTransliterasi :latin012 ;
+    :hasArti :arti012 .
+
+:latin012 a :TransliterasiLatin ;
+    :valueLatin "pulihkan" .
+
+:arti012 a :ArtiBahasaIndonesia ;
+    :valueArti "mengembalikan" .
+
+:kawi013 a :AksaraKawi ;
+    :aksaraValue "ꦲꦗꦶꦫꦶ" ;
+    :hasTransliterasi :latin013 ;
+    :hasArti :arti013 .
+
+:latin013 a :TransliterasiLatin ;
+    :valueLatin "hajiri" .
+
+:arti013 a :ArtiBahasaIndonesia ;
+    :valueArti "kekuasaan atau kekuasaan raja" .
+
+:kawi014 a :AksaraKawi ;
+    :aksaraValue "ꦯꦸꦤ꧀ꦢ" ;
+    :hasTransliterasi :latin014 ;
+    :hasArti :arti014 .
+
+:latin014 a :TransliterasiLatin ;
+    :valueLatin "Sunda" .
+
+:arti014 a :ArtiBahasaIndonesia ;
+    :valueArti "Sunda (nama kerajaan)" .

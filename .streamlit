@@ -1,0 +1,6 @@
+# .streamlit/config.toml
+[runner]
+# Menonaktifkan deteksi otomatis halaman dari folder 'pages/'
+# Ini agar kita bisa mengatur navigasi multi-page secara manual di main_app.py
+# dan menghindari duplikasi di sidebar.
+pages_folder = ""
